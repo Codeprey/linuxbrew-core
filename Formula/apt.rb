@@ -1,7 +1,7 @@
 class Apt < Formula
   desc "Advanced Package Tool"
   homepage "https://wiki.debian.org/apt"
-  url "https://deb.debian.org/debian/pool/main/a/apt/apt_1.9.3.tar.xz"
+  url "https://deb.debian.org/debian/pool/main/a/apt/apt_2.1.9.tar.xz"
   sha256 "f84d5028da78de8b60d80c8639d094422947c8fdc918625ed8f23cbce5e59265"
 
   bottle do
@@ -166,6 +166,6 @@ class Apt < Formula
   end
 
   test do
-    assert_equal "apt 1.9.3 (amd64)", shell_output("#{bin}/apt --version").chomp
+    assert_equal "apt 2.1.9 (amd64)", shell_output("#{bin}/apt --version").chomp
   end
 end
